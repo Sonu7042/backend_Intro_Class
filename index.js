@@ -51,13 +51,8 @@ app.get('/', (req, res)=>{
 
 
 app.post('/addData', (req, res)=>{
-    console.log(req.body)
-
-    res.status(201).json({
-        message: "Data added successfully",
-        success:true
-
-    })
+    res.send(req.body)
+    
 })
 
 
